@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contrato de Aprendizaje</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container" id="contract">
+
+    <h1>Contrato de Aprendizaje</h1>
+    <p><strong>Acuerdo profesional</strong> entre el <strong>Cliente (Docente)</strong> y el <strong>Desarrollador (Estudiante)</strong>. Este documento establece reglas, responsabilidades y criterios de evaluación para el desarrollo del curso.</p>
+
+    <div class="meta">
+      <div class="card">
+        <strong>Nombre del Docente:</strong> ______________________
+      </div>
+      <div class="card">
+        <strong>Nombre del Estudiante:</strong> ______________________
+      </div>
+      <div class="card">
+        <strong>Asignatura:</strong> ______________________
+      </div>
+      <div class="card">
+        <strong>Periodo:</strong> ______________________
+      </div>
+    </div>
+
+    <h2>Criterios y Porcentajes de Evaluación</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Clave</th>
+          <th>Descripción</th>
+          <th>Porcentaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>EC</td>
+          <td>Examen</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>ED</td>
+          <td>Trabajo en clase</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>EP</td>
+          <td>Tareas</td>
+          <td>30%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Lineamientos de Materia y Google Classroom</h2>
+    <div class="lineamientos">
+      <p>1. Todo material publicado será difundido exclusivamente por el profesor; está prohibido su uso indebido.</p>
+      <p>2. El estudiante entregará puntualmente todas las actividades solicitadas.</p>
+      <p>3. Tolerancia de 5 minutos después de la hora señalada; posterior a eso se contará como falta.</p>
+      <p>4. Se requiere mínimo 80% de asistencia para derecho a evaluación parcial.</p>
+      <p>5. Se usará Google Classroom para publicar evidencias y actividades.</p>
+      <p>6. Plagio o copia en exámenes implica reprobar la asignatura al 100%.</p>
+      <p>7. Indisciplina puede implicar reprobación al 100% con valoración del tutor y VoBo de la Dirección.</p>
+      <p>8. Prohibido consumir alimentos dentro del aula.</p>
+      <p>9. Para derecho a examen final, se debe haber aprobado al menos un parcial.</p>
+      <p>10. El profesor conserva la propiedad intelectual del material de clase.</p>
+      <p>11. Justificantes solo por tutor o correo con copia a tutor.</p>
+      <p>12. Máximo dos justificaciones por parcial; entregables dentro de dos días tras la falta justificada.</p>
+      <p>13. Prohibida toda falta de respeto entre compañeros o hacia el profesor.</p>
+      <p>14. Toda presentación deberá incluir citas y referencias.</p>
+      <p>15. Faltas de ortografía restan calificación.</p>
+      <p>16. Prohibido uso de redes y videojuegos durante clase salvo autorización.</p>
+      <p>17. Es indispensable solicitar permiso para entrar al salón.</p>
+      <p>18. Prohibido el uso de IA para elaborar evidencias; detectarlo implica calificación 0.</p>
+    </div>
+
+    <h2>Calendario de Parciales</h2>
+    <div class="calendar">
+      <div class="card"><strong>Parcial 1:</strong><br> Miércoles 4 de febrero de 2026</div>
+      <div class="card"><strong>Parcial 2:</strong><br> Miércoles 4 de marzo de 2026</div>
+      <div class="card"><strong>Parcial 3:</strong><br> Miércoles 1 de abril de 2026</div>
+    </div>
+
+    <h2>Compromisos del Estudiante</h2>
+    <ul>
+      <li>Participar activamente en clase y colaborar en equipo.</li>
+      <li>Organizar tiempos de estudio y cumplir fechas de entrega.</li>
+      <li>Resolver dudas con respeto y disposición.</li>
+      <li>Conservar actitud ética y responsable durante todo el curso.</li>
+    </ul>
+
+    <h2>Compromisos del Docente</h2>
+    <ul>
+      <li>Asignar actividades y prácticas necesarias.</li>
+      <li>Guiar en el contenido de la materia.</li>
+      <li>Fomentar el aprendizaje autónomo.</li>
+      <li>Evaluar objetivamente y reprobar en caso de incumplimientos académicos.</li>
+      <li>Solicitar proyectos de materia e integrador.</li>
+    </ul>
+
+    <div class="signatures">
+      <div class="sign-box">
+        _______________________________<br>
+        <strong>Firma del Docente</strong>
+      </div>
+      <div class="sign-box">
+        _______________________________<br>
+        <strong>Firma del Estudiante</strong>
+      </div>
+    </div>
+
+    <p style="margin-top:20px; font-size:14px; text-align:center;">Al firmar, ambas partes aceptan los lineamientos, criterios y compromisos descritos en este contrato.</p>
+
+  </div>
+
+  <div class="btns">
+    <button class="primary" onclick="downloadPDF()">Descargar en PDF</button>
+    <button class="outline" onclick="window.print()">Imprimir</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="back.js"></script>
+</body>
+</html>
